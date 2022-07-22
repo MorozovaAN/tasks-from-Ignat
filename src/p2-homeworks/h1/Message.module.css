@@ -1,35 +1,41 @@
-.message {
-    display: flex;
-    margin: 20px;
-    gap:20px;
+.wrapper {
+  display: flex;
+  margin: 20px;
 }
 .avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 2px solid rgb(199, 199, 199);
-    align-self: end;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(199, 199, 199);
+  align-self: end;
 }
 .container {
-    background: rgb(127, 211, 99);
-    padding: 15px;
-    border-radius: 12px;
-    display: grid;
-    min-width: 20%;
-    max-width: 50%;
+  display: grid;
+  max-width: 50%;
+  grid-template-columns: 19px 1fr;
+}
+.message {
+  background: rgb(127, 211, 99);
+  padding: 15px;
+  border-radius: 10px 10px 10px 0;
+  display: grid;
+}
+.tailIcon {
+  align-self: end;
+  /*margin-right: -1.5px;*/
 }
 .name {
-    margin: 0;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
 }
 .text {
-    font-size: 14px;
-    color: #205612;
+  font-size: 14px;
+  color: #205612;
 }
 .time {
-    font-size: 12px;
-    justify-self: end;
-    color: #595959;
+  font-size: 12px;
+  justify-self: end;
+  color: #595959;
 }
