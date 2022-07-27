@@ -1,3 +1,46 @@
-.someClass {
-
+.btnPriority {
+  font-size: 16px;
+  margin-right: 10px;
+  background: rgba(70, 125, 182, 0.9);
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.btnPriority:hover {
+  background: rgb(60, 108, 155);
+  transition: 0.4s ease;
+}
+.affairsTitle {
+  text-align: center;
+}
+.affairs {
+  margin-left: 20px;
+  max-width: 300px;
+}
+.priorityTitle {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.name {
+  margin: 5px 0;
+}
+.affair {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  align-items: baseline;
+}
+.btnDelete {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.4s ease;
+  width: 27px;
+  height: 27px;
+  background: rgb(235 169 169);
+}
+.btnDelete:hover {
+  background: rgb(232, 94, 94);
 }
