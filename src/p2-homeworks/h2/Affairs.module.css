@@ -44,3 +44,12 @@
 .btnDelete:hover {
   background: rgb(232, 94, 94);
 }
+.high {
+  color: red;
+}
+.middle {
+  color: #f69830;
+}
+.low {
+  color: #24b024;
+}

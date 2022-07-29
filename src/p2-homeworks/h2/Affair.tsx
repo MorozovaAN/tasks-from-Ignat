@@ -11,11 +11,12 @@ function Affair(props: AffairPropsType) {
   const deleteCallback = () => {
     props.deleteAffairCallback(props.affair._id);
   };
+  const priorityClass = styles[props.affair.priority];
 
   return (
     <div className={styles.affair}>
       <span className={styles.name}>{props.affair.name}</span>
-      <span>[{props.affair.priority}]</span>
+      <span className={priorityClass}>[{props.affair.priority}]</span>
       <button className={styles.btnDelete} onClick={deleteCallback}>
         X
       </button>

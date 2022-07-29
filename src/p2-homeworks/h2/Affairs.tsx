@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Affairs.module.css";
 import Affair from "./Affair";
-import { AffairPriorityType, AffairType, FilterType } from "./HW2";
+import { AffairType, FilterType } from "./HW2";
 
 type AffairsPropsType = {
-  data: AffairPriorityType;
+  data: AffairType[];
   setFilter: (filter: FilterType) => void;
   deleteAffairCallback: (id: number) => void;
 };
