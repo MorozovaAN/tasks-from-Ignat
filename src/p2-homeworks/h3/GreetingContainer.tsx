@@ -1,38 +1,50 @@
-import React, {useState} from 'react'
-import Greeting from './Greeting'
+import React, { ChangeEvent, useState } from "react";
+import Greeting from "./Greeting";
+import { UserType } from "./HW3";
 
 type GreetingContainerPropsType = {
-    users: any // need to fix any
-    addUserCallback: any // need to fix any
-}
+  users: Array<UserType>;
+  addUserCallback: (name: string) => void;
+};
 
-// более простой и понятный для новичков
-// function GreetingContainer(props: GreetingPropsType) {
-
-// более современный и удобный для про :)
 // уровень локальной логики
-const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
+  users,
+  addUserCallback,
+}) => {
+  // деструктуризация пропсов
+  const [name, setName] = useState<string>("");
+  const [error, setError] = useState<string>("Введите имя:");
 
-    const setNameCallback = (e: any) => { // need to fix any
-        setName('') // need to fix
+  const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
+    setName(e.currentTarget.value);
+    if (/[aA-zZаА-яЯ]+/.test(e.currentTarget.value)) setError("");
+    else {
+      setError("Имя должно содержать буквенные символы");
     }
-    const addUser = () => {
-        alert(`Hello  !`) // need to fix
-    }
+  };
 
-    const totalUsers = 0 // need to fix
+  const addUser = () => {
+    const currentName = name.trim();
+    alert(`Hello ${currentName}!`);
+    addUserCallback(currentName);
+    setName("");
+    setError("Введите имя:");
+  };
 
-    return (
-        <Greeting
-            name={name}
-            setNameCallback={setNameCallback}
-            addUser={addUser}
-            error={error}
-            totalUsers={totalUsers}
-        />
-    )
-}
+  const totalUsers = users.length;
+  const btnDisabled = /[aA-zZаА-яЯ]+/.test(name) ? false : true;
 
-export default GreetingContainer
+  return (
+    <Greeting
+      name={name}
+      setNameCallback={setNameCallback}
+      addUser={addUser}
+      error={error}
+      totalUsers={totalUsers}
+      btnDisabled={btnDisabled}
+    />
+  );
+};
+
+export default GreetingContainer;

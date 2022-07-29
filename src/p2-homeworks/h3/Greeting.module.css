@@ -1,7 +1,15 @@
-.someClass {
-
+.wrapper {
+  margin-left: 20px;
 }
-
 .error {
-    border: 1px solid red;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.input {
+  border: 1px solid green;
+  border-radius: 5px;
+}
+.btnAdd {
+  margin-left: 10px;
+  border-radius: 5px;
 }

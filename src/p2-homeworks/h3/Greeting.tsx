@@ -1,28 +1,33 @@
-import React from 'react'
-import s from './Greeting.module.css'
+import React, { ChangeEvent } from "react";
+import s from "./Greeting.module.css";
 
 type GreetingPropsType = {
-    name: any // need to fix any
-    setNameCallback: any // need to fix any
-    addUser: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
-}
+  name: string;
+  setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void;
+  addUser: () => void;
+  error: string;
+  totalUsers: number;
+  btnDisabled: boolean;
+};
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
+  { name, setNameCallback, addUser, error, totalUsers, btnDisabled } // деструктуризация пропсов
 ) => {
-    const inputClass = s.error // need to fix with (?:)
+  const inputClass = btnDisabled ? s.error : s.input;
 
-    return (
-        <div>
-            <input value={name} onChange={setNameCallback} className={inputClass}/>
-            <span>{error}</span>
-            <button onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
-        </div>
-    )
-}
+  return (
+    <div className={s.wrapper}>
+      <p>{error}</p>
+      <input value={name} onChange={setNameCallback} className={inputClass} />
+      <button disabled={btnDisabled} onClick={addUser} className={s.btnAdd}>
+        add
+      </button>
+      <p>
+        Всего пользователей: <span>{totalUsers}</span>
+      </p>
+    </div>
+  );
+};
 
-export default Greeting
+export default Greeting;
