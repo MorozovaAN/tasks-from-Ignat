@@ -2,11 +2,16 @@
   margin-left: 20px;
 }
 .error {
-  border: 1px solid red;
+  outline: none;
+  border: 2px solid red;
   border-radius: 5px;
 }
+.errorText {
+  height: 20px;
+}
 .input {
-  border: 1px solid green;
+  outline: none;
+  border: 2px solid green;
   border-radius: 5px;
 }
 .btnAdd {

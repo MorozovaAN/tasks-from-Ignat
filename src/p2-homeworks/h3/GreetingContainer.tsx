@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, KeyboardEvent, useState } from "react";
 import Greeting from "./Greeting";
 import { UserType } from "./HW3";
 
@@ -17,9 +17,10 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
   const [error, setError] = useState<string>("Введите имя:");
 
   const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
-    setName(e.currentTarget.value);
-    if (/[aA-zZаА-яЯ]+/.test(e.currentTarget.value)) setError("");
-    else {
+    setName(e.currentTarget.value.trim());
+    if (/[aA-zZаА-яЯ]+/.test(e.currentTarget.value)) {
+      setError("");
+    } else {
       setError("Имя должно содержать буквенные символы");
     }
   };
@@ -35,6 +36,10 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
   const totalUsers = users.length;
   const btnDisabled = /[aA-zZаА-яЯ]+/.test(name) ? false : true;
 
+  const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter" && /[aA-zZаА-яЯ]+/.test(name)) addUser();
+  };
+
   return (
     <Greeting
       name={name}
@@ -43,6 +48,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
       error={error}
       totalUsers={totalUsers}
       btnDisabled={btnDisabled}
+      onEnter={onEnter}
     />
   );
 };
