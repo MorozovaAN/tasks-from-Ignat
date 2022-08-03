@@ -1,12 +1,22 @@
 .superInput {
-
+  border: none;
+  background: #d2ecfb9e;
+  outline: none;
+  height: 30px;
+  width: 250px;
+  border-radius: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: -2px 3px 15px 0px rgb(30 98 150 / 15%) inset;
+  margin-bottom: 10px;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+  background: #f8c9c9b8;
+  box-shadow: -2px 3px 15px 0px rgb(112 17 17 / 15%) inset;
 }
 
 .error {
-    color: red;
+  color: #df4141;
+  margin-bottom: 10px;
 }
