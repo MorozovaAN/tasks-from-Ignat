@@ -1,0 +1,51 @@
+.nav {
+  transform: translateX(-290px);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: fit-content;
+  transition: 0.5s ease-in-out;
+}
+.nav:hover {
+  animation: menu-animation 0.5s ease-in-out both;
+  transition: 0.5s ease-in-out;
+}
+@keyframes menu-animation {
+  to {
+    transform: translateX(0px);
+  }
+}
+.menuIcon {
+  width: 20px;
+  height: 20px;
+  background: #3cde3c;
+}
+.menuIcon:hover {
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+.item {
+}
+.link {
+  text-decoration: none;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.4s ease;
+  color: #205612;
+}
+.link:hover {
+  color: #3cde3c;
+  transition: 0.4s ease;
+}
+.activeLink {
+  color: #1d8d1d;
+  cursor: default;
+  text-decoration: underline;
+}
+.activeLink:hover {
+  color: #1d8d1d;
+}

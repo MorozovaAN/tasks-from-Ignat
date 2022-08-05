@@ -1,0 +1,13 @@
+.container {
+  color: #24b024;
+}
+.title {
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+  letter-spacing: 7px;
+}
+.subtitle {
+  text-align: center;
+  margin-top: 15px;
+}
