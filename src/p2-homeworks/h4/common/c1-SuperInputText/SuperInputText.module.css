@@ -1,14 +1,17 @@
-.superInput {
-  border: none;
+.input {
   background: #d2ecfb9e;
+  border: none;
   outline: none;
   height: 30px;
   width: 250px;
   border-radius: 15px;
   padding: 10px;
   box-sizing: border-box;
-  box-shadow: -2px 3px 15px 0px rgb(30 98 150 / 15%) inset;
   margin-bottom: 10px;
+}
+.superInput {
+  background: #d2ecfb9e;
+  box-shadow: -2px 3px 15px 0px rgb(30 98 150 / 15%) inset;
 }
 
 .errorInput {
