@@ -1,6 +1,7 @@
 import React, { ChangeEvent, useState } from "react";
 import SuperInputText from "./common/c1-SuperInputText/SuperInputText";
 import s from "./HW4.module.css";
+import "../../index.css";
 import SuperButton from "./common/c2-SuperButton/SuperButton";
 import SuperCheckbox from "./common/c3-SuperCheckbox/SuperCheckbox";
 
@@ -23,7 +24,7 @@ function HW4() {
   return (
     <div>
       <hr />
-      homeworks 4
+      <h4 className="HWTitle">homeworks 4</h4>
       <div className={s.column}>
         <SuperInputText
           value={text}

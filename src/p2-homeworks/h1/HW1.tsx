@@ -1,5 +1,6 @@
 import React from "react";
 import Message from "./Message";
+import "../../index.css";
 
 const messageData = {
   avatar:
@@ -13,7 +14,7 @@ function HW1() {
   return (
     <div>
       <hr />
-      homeworks 1{/*should work (должно работать)*/}
+      <h4 className="HWTitle">homeworks 1</h4>
       <Message
         avatar={messageData.avatar}
         name={messageData.name}

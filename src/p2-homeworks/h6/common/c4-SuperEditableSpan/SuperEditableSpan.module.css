@@ -1,0 +1,12 @@
+.span {
+  height: 30px;
+  display: block;
+  margin-bottom: 10px;
+  min-width: 250px;
+  width: fit-content;
+  cursor: pointer;
+  box-sizing: border-box;
+  vertical-align: middle;
+  padding-left: 20px;
+  background: url(pencil.svg) no-repeat 0% 5px/15px;
+}
