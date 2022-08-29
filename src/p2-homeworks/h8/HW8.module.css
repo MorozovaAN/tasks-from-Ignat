@@ -1,0 +1,14 @@
+.container {
+  margin-left: 20px;
+}
+.userContainer {
+  display: grid;
+  width: 300px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5px;
+}
+.buttonsContainer {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}

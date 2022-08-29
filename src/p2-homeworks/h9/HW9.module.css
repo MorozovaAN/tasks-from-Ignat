@@ -1,0 +1,22 @@
+.timer {
+  height: 20px;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+.container {
+  margin-left: 20px;
+}
+.buttonsContainer {
+  display: flex;
+  gap: 15px;
+}
+.buttonStart {
+  background: #1da41d;
+}
+.buttonStart:hover {
+  box-shadow: 0 0 6px 1px rgb(79, 187, 79);
+}
+.date {
+  height: 20px;
+  margin-bottom: 15px;
+}
