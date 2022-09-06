@@ -26,18 +26,10 @@ function Clock() {
   };
 
   const stringTime = date
-    ? `${date.getHours() < 10 ? "0" + date.getHours() : date.getHours()}:${
-        date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()
-      }:${date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds()}`
+    ? date.toLocaleTimeString()
     : "Press start to see the current time";
 
-  const stringDate = date
-    ? `${date.getDate() < 10 ? "0" + date.getDate() : date.getDate()}.${
-        date.getMonth() + 1 < 10
-          ? `0${date.getMonth() + 1}`
-          : date.getMonth() + 1
-      }.${date.getFullYear()}`
-    : "";
+  const stringDate = date ? date.toLocaleDateString() : "";
 
   return (
     <div className={s.container}>
