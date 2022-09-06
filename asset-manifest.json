@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/tasks-from-Ignat/static/css/main.964e20e8.chunk.css",
-    "main.js": "/tasks-from-Ignat/static/js/main.65311db5.chunk.js",
-    "main.js.map": "/tasks-from-Ignat/static/js/main.65311db5.chunk.js.map",
+    "main.css": "/tasks-from-Ignat/static/css/main.9e5978e7.chunk.css",
+    "main.js": "/tasks-from-Ignat/static/js/main.af4c760b.chunk.js",
+    "main.js.map": "/tasks-from-Ignat/static/js/main.af4c760b.chunk.js.map",
     "runtime-main.js": "/tasks-from-Ignat/static/js/runtime-main.a1fbc5a8.js",
     "runtime-main.js.map": "/tasks-from-Ignat/static/js/runtime-main.a1fbc5a8.js.map",
-    "static/js/2.3f40e1ba.chunk.js": "/tasks-from-Ignat/static/js/2.3f40e1ba.chunk.js",
-    "static/js/2.3f40e1ba.chunk.js.map": "/tasks-from-Ignat/static/js/2.3f40e1ba.chunk.js.map",
+    "static/js/2.8179fb3b.chunk.js": "/tasks-from-Ignat/static/js/2.8179fb3b.chunk.js",
+    "static/js/2.8179fb3b.chunk.js.map": "/tasks-from-Ignat/static/js/2.8179fb3b.chunk.js.map",
     "index.html": "/tasks-from-Ignat/index.html",
-    "precache-manifest.135b64bf00cf608adaf7364c78019121.js": "/tasks-from-Ignat/precache-manifest.135b64bf00cf608adaf7364c78019121.js",
+    "precache-manifest.e46d8c52938030cf0d2f4a9d24f9a588.js": "/tasks-from-Ignat/precache-manifest.e46d8c52938030cf0d2f4a9d24f9a588.js",
     "service-worker.js": "/tasks-from-Ignat/service-worker.js",
-    "static/css/main.964e20e8.chunk.css.map": "/tasks-from-Ignat/static/css/main.964e20e8.chunk.css.map",
-    "static/js/2.3f40e1ba.chunk.js.LICENSE.txt": "/tasks-from-Ignat/static/js/2.3f40e1ba.chunk.js.LICENSE.txt",
+    "static/css/main.9e5978e7.chunk.css.map": "/tasks-from-Ignat/static/css/main.9e5978e7.chunk.css.map",
+    "static/js/2.8179fb3b.chunk.js.LICENSE.txt": "/tasks-from-Ignat/static/js/2.8179fb3b.chunk.js.LICENSE.txt",
+    "static/media/loader.gif": "/tasks-from-Ignat/static/media/loader.6e5d6096.gif",
     "static/media/SuperEditableSpan.module.css": "/tasks-from-Ignat/static/media/pencil.a60850aa.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a1fbc5a8.js",
-    "static/js/2.3f40e1ba.chunk.js",
-    "static/css/main.964e20e8.chunk.css",
-    "static/js/main.65311db5.chunk.js"
+    "static/js/2.8179fb3b.chunk.js",
+    "static/css/main.9e5978e7.chunk.css",
+    "static/js/main.af4c760b.chunk.js"
   ]
 }
